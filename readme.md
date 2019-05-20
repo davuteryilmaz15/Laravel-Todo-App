@@ -13,7 +13,7 @@ git clone https://github.com/davuteryilmaz15/Laravel-Todo-App.git
 
 Then cd into the folder with this command-
 ```
-cd todos_app
+cd Laravel-Todo-App
 ```
 
 Then do a composer install
@@ -22,8 +22,13 @@ composer install
 ```
 
 Then create a environment file using this command-
+linux, mac os
 ```
 cp .env.example .env
+```
+windows
+```
+copy .env.example .env
 ```
 
 Then edit `.env` file with appropriate credential for your database server. Just edit these two parameter(`DB_USERNAME`, `DB_PASSWORD`).
@@ -34,10 +39,10 @@ php artisan migrate
 ```
 
 Then run seeders using thins command-
+This seeder will add admin to the users table and will define admin and standard roles.
 ```
 php artisan db:seed
 ```
-This seeder will add admin to the users table and will define admin and standard roles.
 
 At last generate application key, which will be used for password hashing, session and cookie encryption etc.
 ```

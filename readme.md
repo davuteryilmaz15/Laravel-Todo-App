@@ -22,6 +22,7 @@ composer install
 ```
 
 Then create a environment file using this command-
+
 linux, mac os
 ```
 cp .env.example .env
@@ -31,7 +32,7 @@ windows
 copy .env.example .env
 ```
 
-Then edit `.env` file with appropriate credential for your database server. Just edit these two parameter(`DB_USERNAME`, `DB_PASSWORD`).
+Then edit `.env` file with appropriate credential for your database server. Just edit these three parameter(`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`).
 
 Then create a database named `todos` and then do a database migration using this command-
 ```
@@ -39,6 +40,7 @@ php artisan migrate
 ```
 
 Then run seeders using thins command-
+
 This seeder will add admin to the users table and will define admin and standard roles.
 ```
 php artisan db:seed
